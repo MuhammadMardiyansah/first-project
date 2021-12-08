@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 1.5em;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+.navbar-nav li a{
+    font-family: 'Viga', sans-serif;
+    margin-right: 20px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2; 
+}
+
+/* jumbroton */
+#hero {
+    background-image: url(../img/antonio-janeski-CHVTt0aGbx0-unsplash.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    /* height: 720px; */
+    z-index: 1;
+    text-align: center;
+}
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.display-4{ 
+    padding-top: 220px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+#hero .cta{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #7927FF;
+    border: 2px solid #7927FF;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    transition: .5s ease;
+}
+
+.lead{
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* info panel */
+.info-panel{
+    background-color: salmon;
+}
+/* end panel */
+
+/* breakpoint desktop */
+@media (min-width: 992px) { 
+    .navbar-brand{
+        margin-left: 15px;
+    }
+    .navbar-brand, .navbar-nav li a {
+        color: white !important;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #7927FF;
+        width: 50%;
+        margin: auto;
+        margin-bottom: -3px;
+    }
+
+    #hero{
+        margin-top: -56px;
+        /* min-height: 100vh; */
+        /* height: 780px; */
+    }
+ }
+
+
+
+ /* .jumbotron{
+    background-image: url(../img/antonio-janeski-CHVTt0aGbx0-unsplash.jpg);
+    background-size: cover;
+    height: 717px;
+    position: relative;
+    z-index: 1;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.display-4{
+    text-align: center;
+    padding-top: 230px;
+    color: white;
+    font-weight: 400;
+}
+.display-4 span{
+    font-weight: 500;
+    color: #7927FF;
+}
+.lead{
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+} */
